@@ -1,0 +1,24 @@
+ wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+ echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
+ apt update
+ apt install elasticsearch
+vim /etc/elasticsearch/elasticsearch.yml
+service elasticsearch restart
+service elasticsearch status
+
+apt-get install kibana
+ 
+
+ service kibana start 
+ss -ntlp
+service kibana start
+service kibana status
+ apt-get install nginx apache2-utils
+ curl -X GET "localhost:9200"
+ htpasswd -c /etc/nginx/htpasswd.users ccfadmin
+mv /etc/nginx/sites-available/default /etc/nginx/sites-available/default_bak
+service nginx restart
+service nginx status
+install default-jre
+apt install logstash
+ 
